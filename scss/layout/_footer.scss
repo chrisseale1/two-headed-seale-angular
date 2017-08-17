@@ -1,0 +1,77 @@
+footer {
+    background-color: $baseDark;
+    width: 100%;
+    min-height: 10em;
+    position: fixed;
+    bottom: 0;
+}
+
+//---------- footer styling---------
+div.footer-container {
+    background-color: $baseDark;
+    clear: both;
+    color: $baseSand;
+    width: 100%;
+    #footer-contents {
+        width: 75%;
+        margin: auto;
+    }
+    .footer-links {
+        ul {
+            padding-top: 1.9em;
+        }
+        li {
+            list-style: none;
+            padding-top: .3em;
+            font-size: 1.5em;
+            // font-family: @oswaldBold, @abolon, sans-serif;
+            font-weight: 400;
+        }
+        a {
+            color: $baseSand;
+        }
+        a:hover {
+            color: $baseWhite;
+            text-decoration: none;
+        }
+    }
+    #footer-social {
+        height: 15em;
+        line-height: 15em;
+        float: right;
+        .btn {
+            background-color: $baseSand;
+            color: $baseDark;
+            border-radius: 0.5em;
+            margin-bottom: 0.5em;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+        .btn:hover {
+            background-color: $baseWhite;
+        }
+        a {
+            color: $baseSand;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $baseWhite;
+        }
+        .fa-facebook-square {
+            font-size: 5em;
+        }
+        .fa-twitter-square {
+            font-size: 5em;
+            padding-left: .3em;
+        }
+    }
+    @media (max-width: 700px) {
+        #footer-social {
+            float: none;
+            text-align: center;
+            line-height: 0em;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+* html,
+body {
+    background-color: $baseWhite;
+    background-image: url(../images/water-background.jpg);
+    background-size: cover;
+}
+
+.gradient-line {
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+// LOGOS
+//for header
+#nav-brand {
+    margin-top: -1.5em;
+    z-index: 999999;
+}
+
+//for footer
+#footer-logo {
+    float: left;
+    height: 15em;
+    line-height: 15em;
+    img {
+        color: $baseSand;
+        padding-top: .15em;
+        width: 12em;
+    }
+}
+
+@media (max-width: 700px) {
+    #footer-logo {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+}
+
+// Symbols
+//copyright
+#copyright {
+    text-align: center;
+    margin-top: -2em;
+    font-size: 1.2em;
+    // font-family: @abolon, @oswaldLight, sans-serif;
+    font-weight: 300;
+}
+
+@media (max-width: 700px) {
+    #copyright {
+        margin-top: 0em;
+        bottom: 0;
+    }
+}
