@@ -1,0 +1,15 @@
+//Footer button
+.btn {
+    background-color: $baseSand;
+    color: $baseDark;
+    font-family: $abolon;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: $baseWhite;
+}

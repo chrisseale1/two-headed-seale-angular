@@ -1,9 +1,10 @@
 footer {
     background-color: $baseDark;
     width: 100%;
-    min-height: 10em;
+    min-height: 6em;
     position: fixed;
     bottom: 0;
+    margin-top: 1em;
 }
 
 //---------- footer styling---------
@@ -24,7 +25,7 @@ div.footer-container {
             list-style: none;
             padding-top: .3em;
             font-size: 1.5em;
-            // font-family: @oswaldBold, @abolon, sans-serif;
+            font-family: $oswaldBold, $abolon, sans-serif;
             font-weight: 400;
         }
         a {
@@ -39,18 +40,6 @@ div.footer-container {
         height: 15em;
         line-height: 15em;
         float: right;
-        .btn {
-            background-color: $baseSand;
-            color: $baseDark;
-            border-radius: 0.5em;
-            margin-bottom: 0.5em;
-            -webkit-transition-duration: 0.4s;
-            /* Safari */
-            transition-duration: 0.4s;
-        }
-        .btn:hover {
-            background-color: $baseWhite;
-        }
         a {
             color: $baseSand;
             text-decoration: none;

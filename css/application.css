@@ -1,3 +1,9 @@
+@import url("/fonts/Abolon.otf");
+@import url("/fonts/Abolon.ttf");
+@import url("/fonts/Oswald-Bold.ttf");
+@import url("/fonts/Oswald-Light.ttf");
+@import url("/fonts/Oswald-Regular.ttf");
+@import url("/fonts/Seale-font.ttf");
 * html,
 body {
   background-color: #F4F4F4;
@@ -28,6 +34,15 @@ body {
     text-align: center;
     float: none;
     width: 100%; } }
+.brand-holder {
+  margin-bottom: -1.5em; }
+  .brand-holder .welcome {
+    margin-bottom: 0.75em;
+    font-size: 4em; }
+  @media screen and (max-width: 993px) {
+    .brand-holder .welcome {
+      font-size: 3.5em; } }
+
 #copyright {
   text-align: center;
   margin-top: -2em;
@@ -39,6 +54,7 @@ body {
     margin-top: 0em;
     bottom: 0; } }
 .navbar {
+  z-index: 900;
   position: fixed;
   top: 0;
   width: 100%;
@@ -90,6 +106,7 @@ body {
       display: inline-block;
       color: #233237;
       height: 0em;
+      font-family: "Abolon", serif, "Oswald-Bold", serif, sans-serif;
       font-size: 2em;
       margin: 0; }
       #mobile-menu ul li.page {
@@ -102,12 +119,720 @@ body {
   .navbar-toggler .navbar-toggler:focus:active {
     outline: 0 !important; }
 
+.splash {
+  margin-top: 8em; }
+  .splash .brand-holder {
+    margin-bottom: -1.5em; }
+    .splash .brand-holder .welcome {
+      margin-bottom: 0.75em;
+      font-size: 4em;
+      font-family: "Oswald-Bold", serif, "Abolon", serif, sans-serif; }
+    @media screen and (max-width: 993px) {
+      .splash .brand-holder .welcome {
+        font-size: 3.5em; } }
+  .splash .constrain-contain {
+    margin-top: -2em; }
+    .splash .constrain-contain .slide-container {
+      display: inline;
+      font-family: "Abolon", serif; }
+      .splash .constrain-contain .slide-container .slide {
+        width: 350px;
+        height: 450px;
+        margin: 0;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid lightgrey;
+        color: #c2bba8;
+        text-align: justify;
+        cursor: pointer;
+        cursor: hand; }
+      @media (min-width: 540px) and (max-width: 1200px) {
+        .splash .constrain-contain .slide-container .slide {
+          width: 300px;
+          height: 400px; } }
+      .splash .constrain-contain .slide-container .transform {
+        overflow: hidden; }
+      .splash .constrain-contain .slide-container .transform img {
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out; }
+      .splash .constrain-contain .slide-container .transform:hover img {
+        transform: translateX(-550px); }
+      .splash .constrain-contain .slide-container .background,
+      .splash .constrain-contain .slide-container .multi {
+        background-image: url(../images/headshot.png);
+        background-repeat: no-repeat;
+        background-color: #a0adb7;
+        background-size: cover;
+        background-position: top center;
+        -webkit-transition: all 1.5s ease-in-out;
+        -moz-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+        -ms-transition: all 1.5s ease-in-out;
+        transition: all 1.5s ease-in-out; }
+    @media (min-width: 540px) and (max-width: 1200px) {
+      .splash .constrain-contain .slide-container {
+        margin-left: -3em; } }
+    .splash .constrain-contain .slide-container2 {
+      display: inline;
+      font-family: "Abolon", serif; }
+      .splash .constrain-contain .slide-container2 .slide2 {
+        width: 350px;
+        height: 450px;
+        margin: 0px;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid lightgrey;
+        color: white;
+        text-align: justify;
+        cursor: pointer;
+        cursor: hand; }
+      @media (min-width: 540px) and (max-width: 1200px) {
+        .splash .constrain-contain .slide-container2 .slide2 {
+          width: 300px;
+          height: 400px; } }
+      .splash .constrain-contain .slide-container2 .transform2 {
+        overflow: hidden; }
+      .splash .constrain-contain .slide-container2 .transform2 img {
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out; }
+      .splash .constrain-contain .slide-container2 .transform2:hover img {
+        transform: translateX(350px); }
+      .splash .constrain-contain .slide-container2 .background,
+      .splash .constrain-contain .slide-container2 .multi2 {
+        background-image: url(../images/jess.jpg);
+        background-repeat: no-repeat;
+        background-color: #a0adb7;
+        background-size: cover;
+        background-position: top center;
+        -webkit-transition: all 1.5s ease-in-out;
+        -moz-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+        -ms-transition: all 1.5s ease-in-out;
+        transition: all 1.5s ease-in-out; }
+    @media (min-width: 540px) and (max-width: 1200px) {
+      .splash .constrain-contain .slide-container2 {
+        margin-left: 2em; } }
+
+@media (max-width: 768px) {
+  .splash {
+    margin-top: 6em;
+    width: 100%; } }
+.container {
+  margin-bottom: 3em;
+  text-align: center; }
+  .container h2 {
+    font-family: "Oswald-Bold", serif; }
+  .container .mini-container {
+    margin-bottom: 2.8em; }
+    .container .mini-container .mini-image1 {
+      height: 10em;
+      width: 100%;
+      background-image: url(../images/computer-study.jpg);
+      background-size: cover;
+      background-color: #a0adb7; }
+    .container .mini-container .mini-image2 {
+      height: 10em;
+      width: 100%;
+      background-image: url(../images/responsive-design.jpg);
+      background-size: cover;
+      background-color: #a0adb7; }
+    .container .mini-container .mini-image3 {
+      height: 10em;
+      width: 100%;
+      background-image: url(../images/colors-wheel.jpg);
+      background-size: cover;
+      background-color: #a0adb7; }
+    .container .mini-container p {
+      font-family: "Oswald-Light", serif;
+      text-align: left;
+      font-size: 1.15em; }
+    @media (max-width: 700px) {
+      .container .mini-container p {
+        font-size: 1.65em;
+        text-align: center; } }
+
+@media only screen and (min-device-width: 768px) {
+  div#about-main-container {
+    padding-top: 4em;
+    padding-bottom: 4em; }
+    div#about-main-container h2 {
+      font-family: "Oswald-Bold", serif, sans-serif;
+      margin-top: 0; }
+    div#about-main-container h3 {
+      font-family: "Abolon", serif, sans-serif; }
+    div#about-main-container .about-para {
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 1.25em;
+      display: inline-block; }
+    div#about-main-container .contact-info a {
+      text-decoration: none;
+      color: black; }
+      div#about-main-container .contact-info a a:hover {
+        color: #a0adb7; }
+    div#about-main-container .email-address {
+      margin-right: 1em;
+      font-family: "Oswald-Bold", serif;
+      font-size: 1.5em;
+      vertical-align: middle; }
+    div#about-main-container .portfolio-link {
+      margin-right: 1em;
+      font-family: "Oswald-Bold", serif;
+      font-size: 1.5em;
+      vertical-align: middle; }
+    div#about-main-container .resume-button {
+      margin-right: 1.3em;
+      font-family: "Oswald-Bold", serif;
+      font-size: 1.5em;
+      vertical-align: middle;
+      border: none;
+      background: none; }
+    div#about-main-container .linkedin-logo img {
+      height: 1.7em; }
+    div#about-main-container .github-logo img {
+      height: 2.2em;
+      margin-right: 2em; }
+    div#about-main-container .modal-header .close {
+      color: black;
+      opacity: 1; }
+    div#about-main-container .modal-content {
+      display: inline-block;
+      text-align: center; }
+    div#about-main-container #modal-label {
+      font-size: 30px;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#about-main-container .modal-body h3 {
+      float: left;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#about-main-container .modal-body p {
+      text-align: left;
+      clear: both;
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 20px; }
+    div#about-main-container .modal-body h5 {
+      text-align: left;
+      float: left;
+      font-family: "Oswald-Bold", serif, sans-serif;
+      clear: both; }
+    div#about-main-container .modal-body li {
+      float: left;
+      text-align: left;
+      clear: both;
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 20px; }
+    div#about-main-container .modal-footer {
+      clear: both; }
+    div#about-main-container .spacer {
+      margin-bottom: 1em; }
+    div#about-main-container #chris-container {
+      width: 75%;
+      margin: auto; }
+      div#about-main-container #chris-container .chris-titles {
+        width: 100%;
+        display: inline-block; }
+        div#about-main-container #chris-container .chris-titles h3 {
+          margin-top: 0; }
+      div#about-main-container #chris-container #chris-image img {
+        height: 300px; }
+      div#about-main-container #chris-container #chris-info {
+        margin-left: 2em; } }
+    @media only screen and (min-device-width: 768px) and (max-width: 950px) {
+      div#about-main-container #chris-container #chris-info {
+        margin-left: 4em; } }
+@media only screen and (min-device-width: 768px) {
+    div#about-main-container #jess-container {
+      width: 75%;
+      margin: auto;
+      padding-top: 3em; }
+      div#about-main-container #jess-container .jess-titles {
+        width: 100%;
+        display: inline-block; }
+        div#about-main-container #jess-container .jess-titles h2 {
+          float: right; }
+        div#about-main-container #jess-container .jess-titles h3 {
+          float: right;
+          margin-top: 0; }
+      div#about-main-container #jess-container #jess-image {
+        display: inline-block; }
+        div#about-main-container #jess-container #jess-image img {
+          height: 20em;
+          width: 9em; }
+      div#about-main-container #jess-container #jess-info {
+        float: left; } }
+    @media only screen and (min-device-width: 768px) and (max-width: 768px) {
+      div#about-main-container #jess-container #jess-image {
+        text-align: center; } }
+@media only screen and (min-device-width: 768px) {
+      div#about-main-container #jess-container .about-para {
+        display: inline-block; } }
+@media only screen and (max-width: 767px) {
+  div#about-main-container {
+    width: 100%;
+    text-align: center; }
+    div#about-main-container .resume-button {
+      margin-left: 0;
+      font-family: "Oswald-Bold", serif;
+      font-size: 1.4em;
+      vertical-align: middle;
+      border: none;
+      background: none; }
+    div#about-main-container .linkedin-logo img {
+      height: 1.5em;
+      margin-right: 0; }
+    div#about-main-container .github-logo img {
+      height: 2em;
+      margin-right: .5em; }
+    div#about-main-container .email-address {
+      margin-right: .5em;
+      font-family: "Oswald-Bold", serif;
+      font-size: 1.4em;
+      vertical-align: middle; }
+    div#about-main-container .contact-info {
+      text-align: center; }
+      div#about-main-container .contact-info a {
+        text-decoration: none;
+        color: black; }
+        div#about-main-container .contact-info a a:hover {
+          color: #a0adb7; }
+    div#about-main-container .about-para {
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 21px; }
+    div#about-main-container .modal-header .close {
+      color: black;
+      opacity: 1; }
+    div#about-main-container .modal-content {
+      display: inline-block;
+      text-align: center; }
+    div#about-main-container #modal-label {
+      font-size: 30px;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#about-main-container .modal-body h3 {
+      float: left;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#about-main-container .modal-body p {
+      text-align: left;
+      clear: both;
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 20px; }
+    div#about-main-container .modal-body h5 {
+      text-align: left;
+      float: left;
+      font-family: "Oswald-Bold", serif, sans-serif;
+      font-size: 20px;
+      clear: both; }
+    div#about-main-container .modal-body li {
+      float: left;
+      text-align: left;
+      clear: both;
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 20px; }
+    div#about-main-container .modal-footer {
+      clear: both; }
+    div#about-main-container .spacer {
+      margin-bottom: 1em; }
+    div#about-main-container .mobile-portrait {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 6em;
+      height: 15em;
+      width: 10em;
+      background-color: #c2bba8;
+      background-image: url("../images/chrishead-square.jpg");
+      background-size: cover; }
+    div#about-main-container #chris-container {
+      width: 90%;
+      padding-top: 1em;
+      margin: auto; }
+      div#about-main-container #chris-container .chris-titles h2 {
+        float: none;
+        margin-bottom: .5em;
+        font-family: "Oswald-Bold", serif, sans-serif; }
+      div#about-main-container #chris-container .chris-titles h5 {
+        font-family: "Abolon", serif, sans-serif; }
+      div#about-main-container #chris-container #chris-info {
+        margin: 0;
+        float: none; }
+    div#about-main-container .mobile-portrait-jess {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      height: 15em;
+      width: 10em;
+      background-color: #c2bba8;
+      background-image: url("../images/jesshead-square.jpg");
+      background-size: cover; }
+    div#about-main-container #jess-container {
+      width: 90%;
+      margin: auto;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+      div#about-main-container #jess-container #jess-info {
+        margin: 0;
+        float: none; }
+    div#about-main-container #jess-container .jess-titles h2 {
+      float: none;
+      margin-bottom: .5em;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#about-main-container #jess-container .jess-titles h5 {
+      font-family: "Abolon", serif, sans-serif; } }
+@media only screen and (min-device-width: 768px) {
+  div.services-main-container {
+    padding-top: 5em;
+    padding-bottom: 4em; }
+    div.services-main-container h1 {
+      font-family: "Abolon", serif, sans-serif;
+      margin-top: 0; }
+    div.services-main-container .services-para {
+      font-family: "Oswald-Light", serif, sans-serif;
+      font-size: 1.25em;
+      display: inline-block; }
+    div.services-main-container .title {
+      width: 100%;
+      display: inline-block; }
+    div.services-main-container #webdesign-container {
+      width: 80%;
+      margin: auto; }
+      div.services-main-container #webdesign-container #webdesign-image {
+        background-image: url(../images/web-design-services.jpg);
+        background-size: cover;
+        height: 11em;
+        width: 100%;
+        top: 0;
+        left: 0; }
+      div.services-main-container #webdesign-container #webdesign-info {
+        display: inline-block; }
+    div.services-main-container #seo-container {
+      background-color: #e7e9ec;
+      padding-top: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding-bottom: 2em;
+      padding-left: 10%;
+      padding-right: 10%;
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
+      div.services-main-container #seo-container h1 {
+        float: right; }
+      div.services-main-container #seo-container #seo-image {
+        background-image: url(../images/seo-services.jpg);
+        background-size: cover;
+        height: 11em;
+        width: 100%; }
+    div.services-main-container #graphicdesign-container {
+      width: 80%;
+      margin: auto; }
+      div.services-main-container #graphicdesign-container #graphicdesign-image {
+        background-image: url(../images/graphicdesign-services.jpg);
+        background-size: cover;
+        height: 11em;
+        width: 100%;
+        top: 0;
+        left: 0; } }
+@media only screen and (max-width: 768px) {
+  div.services-main-container {
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 2em; }
+    div.services-main-container .title h1 {
+      font-family: "Abolon", serif, sans-serif; }
+    div.services-main-container .services-para {
+      font-size: 21px;
+      font-family: "Oswald-Light", serif, sans-serif;
+      width: 97%; }
+    div.services-main-container #webdesign-container {
+      width: 100%; }
+      div.services-main-container #webdesign-container #webdesign-image-mobile {
+        background-image: url(../images/web-design-services-mobile.jpg);
+        background-size: cover;
+        height: 6em;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: .5em; }
+      div.services-main-container #webdesign-container #webdesign-info {
+        margin: 0 .75em 0 .75em; }
+    div.services-main-container #seo-container {
+      width: 100%;
+      background-color: #e7e9ec;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding-top: 2.5em;
+      padding-bottom: 2.5em; }
+      div.services-main-container #seo-container h1 {
+        float: none; }
+      div.services-main-container #seo-container #seo-info {
+        margin: 0 .75em 0 .75em;
+        float: none; }
+      div.services-main-container #seo-container #seo-image-mobile {
+        background-image: url(../images/seo-services-mobile.jpg);
+        background-size: cover;
+        height: 6em;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 0.5em; }
+    div.services-main-container #graphicdesign-container {
+      width: 100%; }
+      div.services-main-container #graphicdesign-container #graphicdesign-image-mobile {
+        background-image: url(../images/graphicdesign-services-mobile.jpg);
+        background-size: cover;
+        height: 6em;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: .5em; }
+      div.services-main-container #graphicdesign-container #graphicdesign-info {
+        margin: 0 .75em 2em .75em; } }
+@media only screen and (min-device-width: 768px) {
+  div#main-portfolio-container {
+    padding-top: 3em;
+    padding-bottom: 4em; }
+    div#main-portfolio-container h1 {
+      font-family: "Abolon", serif, sans-serif;
+      margin-top: 0; }
+    div#main-portfolio-container .port-container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+    div#main-portfolio-container .thumbnail {
+      background-size: cover;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      margin-bottom: 3em; }
+    div#main-portfolio-container .close {
+      color: black;
+      opacity: 1; }
+    div#main-portfolio-container .modal-dialog img {
+      width: 100%; }
+    div#main-portfolio-container .modal-content {
+      display: inline-block;
+      text-align: center; }
+    div#main-portfolio-container #modal-label {
+      font-size: 30px;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    div#main-portfolio-container #mary-modal {
+      margin-left: 11.5%; }
+    div#main-portfolio-container #web-thumb-one {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop1.jpg); }
+    div#main-portfolio-container #web-thumb-two {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop2.jpg); }
+    div#main-portfolio-container #web-thumb-three {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop3.jpg); }
+    div#main-portfolio-container #web-thumb-four {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop4.jpg); }
+    div#main-portfolio-container #web-thumb-five {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile1.jpg); }
+    div#main-portfolio-container #web-thumb-six {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile2.jpg); }
+    div#main-portfolio-container #web-thumb-seven {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile3.jpg); }
+    div#main-portfolio-container #web-thumb-eight {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile4.jpg); }
+    div#main-portfolio-container #web-thumb-nine {
+      background-image: url(../images/portfolio-web/pet-home-desk.png); }
+    div#main-portfolio-container #web-thumb-ten {
+      background-image: url(../images/portfolio-web/pet-search-desk.png); }
+    div#main-portfolio-container #web-thumb-eleven {
+      background-image: url(../images/portfolio-web/pet-resources-desk.png); }
+    div#main-portfolio-container #web-thumb-twelve {
+      background-image: url(../images/portfolio-web/pet-resources-modal.png); }
+    div#main-portfolio-container #web-thumb-thirteen {
+      background-image: url(../images/portfolio-web/pet-resources-mobile.png); }
+    div#main-portfolio-container #web-thumb-fourteen {
+      background-image: url(../images/portfolio-web/pet-vetfinder-desk.png); }
+    div#main-portfolio-container #web-thumb-fifteen {
+      background-image: url(../images/portfolio-web/pet-namegen-desk.png); }
+    div#main-portfolio-container #web-thumb-sixteen {
+      background-image: url(../images/portfolio-web/pet-name-gen-mobile.png); }
+    div#main-portfolio-container #graphic-thumb-one {
+      background-image: url(../images/portfolio-graphic/wikitherapy.jpg); }
+    div#main-portfolio-container #graphic-thumb-two {
+      background-image: url(../images/portfolio-graphic/MaryPhotoshop.jpg); }
+    div#main-portfolio-container #graphic-thumb-three {
+      background-image: url(../images/portfolio-graphic/fightclubyaya1.jpg); }
+    div#main-portfolio-container #graphic-thumb-four {
+      background-image: url(../images/portfolio-graphic/GrouchoYang.png); }
+    div#main-portfolio-container #graphic-thumb-five {
+      background-image: url(../images/portfolio-graphic/Mattsincity.jpg); }
+    div#main-portfolio-container #graphic-thumb-six {
+      background-image: url(../images/portfolio-graphic/Shirapatch.jpg); }
+    div#main-portfolio-container #graphic-thumb-seven {
+      background-image: url(../images/portfolio-graphic/CABFbrochure.jpg); }
+    div#main-portfolio-container #graphic-thumb-eight {
+      background-image: url(../images/portfolio-graphic/aristotle&juliuscaesar.jpg); } }
+@media only screen and (max-width: 767px) {
+  #main-portfolio-container {
+    margin-top: 6em;
+    padding-bottom: 2em; }
+    #main-portfolio-container #modal-label {
+      font-size: 1.2em;
+      font-family: "Oswald-Bold", serif, sans-serif; }
+    #main-portfolio-container .close {
+      color: black;
+      opacity: 1; }
+    #main-portfolio-container img {
+      width: 97%; }
+    #main-portfolio-container .modal-content {
+      display: inline-block;
+      text-align: center; }
+    #main-portfolio-container h1 {
+      font-family: "Abolon", serif, sans-serif;
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center; }
+    #main-portfolio-container .thumbnail {
+      background-size: cover;
+      top: 0;
+      left: 0;
+      height: 16em;
+      width: 90%;
+      margin-bottom: 2em;
+      margin-left: 1.2em; }
+    #main-portfolio-container #web-thumb-one {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop1.jpg); }
+    #main-portfolio-container #web-thumb-two {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop2.jpg); }
+    #main-portfolio-container #web-thumb-three {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop3.jpg); }
+    #main-portfolio-container #web-thumb-four {
+      background-image: url(../images/portfolio-web/mouthfeel-desktop4.jpg); }
+    #main-portfolio-container #web-thumb-five {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile1.jpg); }
+    #main-portfolio-container #web-thumb-six {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile2.jpg); }
+    #main-portfolio-container #web-thumb-seven {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile3.jpg); }
+    #main-portfolio-container #web-thumb-eight {
+      background-image: url(../images/portfolio-web/mouthfeel-mobile4.jpg); }
+    #main-portfolio-container #web-thumb-nine {
+      background-image: url(../images/portfolio-web/pet-home-desk.png); }
+    #main-portfolio-container #web-thumb-ten {
+      background-image: url(../images/portfolio-web/pet-search-desk.png); }
+    #main-portfolio-container #web-thumb-eleven {
+      background-image: url(../images/portfolio-web/pet-resources-desk.png); }
+    #main-portfolio-container #web-thumb-twelve {
+      background-image: url(../images/portfolio-web/pet-resources-modal.png); }
+    #main-portfolio-container #web-thumb-thirteen {
+      background-image: url(../images/portfolio-web/pet-resources-mobile.png); }
+    #main-portfolio-container #web-thumb-fourteen {
+      background-image: url(../images/portfolio-web/pet-vetfinder-desk.png); }
+    #main-portfolio-container #web-thumb-fifteen {
+      background-image: url(../images/portfolio-web/pet-namegen-desk.png); }
+    #main-portfolio-container #web-thumb-sixteen {
+      background-image: url(../images/portfolio-web/pet-name-gen-mobile.png); }
+    #main-portfolio-container #graphic-thumb-one {
+      background-image: url(../images/portfolio-graphic/wikitherapy.jpg); }
+    #main-portfolio-container #graphic-thumb-two {
+      background-image: url(../images/portfolio-graphic/MaryPhotoshop.jpg); }
+    #main-portfolio-container #graphic-thumb-three {
+      background-image: url(../images/portfolio-graphic/fightclubyaya1.jpg); }
+    #main-portfolio-container #graphic-thumb-four {
+      background-image: url(../images/portfolio-graphic/GrouchoYang.png); }
+    #main-portfolio-container #graphic-thumb-five {
+      background-image: url(../images/portfolio-graphic/Mattsincity.jpg); }
+    #main-portfolio-container #graphic-thumb-six {
+      background-image: url(../images/portfolio-graphic/Shirapatch.jpg); }
+    #main-portfolio-container #graphic-thumb-seven {
+      background-image: url(../images/portfolio-graphic/CABFbrochure.jpg); }
+    #main-portfolio-container #graphic-thumb-eight {
+      background-image: url(../images/portfolio-graphic/windowthinking.jpg); } }
+@media only screen and (max-width: 767px) {
+  .spacer {
+    margin-bottom: 5em; } }
+div#tools-main-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 4em;
+  margin-bottom: 4em;
+  display: inline-block; }
+  div#tools-main-container #tools-title h1 {
+    font-size: 40px;
+    font-family: "Abolon", serif, sans-serif;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: -15px; }
+  div#tools-main-container h6 {
+    font-size: 13px;
+    font-family: "Abolon", serif, sans-serif;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px; }
+  div#tools-main-container .noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  div#tools-main-container .tool-list li {
+    font-family: "Oswald-Light", serif, sans-serif;
+    font-size: 28px;
+    list-style: none;
+    width: 41%; }
+    div#tools-main-container .tool-list li a {
+      color: inherit;
+      text-decoration: none; }
+  div#tools-main-container .tool-list li.left {
+    float: left; }
+  div#tools-main-container .tool-list li.right {
+    float: right; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  z-index: 1; }
+  #overlay img {
+    margin-top: 10%; }
+  #overlay p {
+    color: white; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-inside {
+    width: 100%; } }
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  div#tools-main-container {
+    margin-top: -2.5em;
+    padding-top: none; } }
+@media only screen and (max-width: 767px) {
+  div#tools-main-container {
+    text-align: center;
+    margin-top: 3em;
+    padding-bottom: 2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    div#tools-main-container ul.tool-list {
+      padding-left: 0; }
+      div#tools-main-container ul.tool-list .left,
+      div#tools-main-container ul.tool-list .right {
+        float: none;
+        width: 100%; } }
 footer {
   background-color: #233237;
   width: 100%;
-  min-height: 10em;
+  min-height: 6em;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  margin-top: 1em; }
 
 div.footer-container {
   background-color: #233237;
@@ -123,6 +848,7 @@ div.footer-container {
     list-style: none;
     padding-top: .3em;
     font-size: 1.5em;
+    font-family: "Oswald-Bold", serif, "Abolon", serif, sans-serif;
     font-weight: 400; }
   div.footer-container .footer-links a {
     color: #c2bba8; }
@@ -133,16 +859,6 @@ div.footer-container {
     height: 15em;
     line-height: 15em;
     float: right; }
-    div.footer-container #footer-social .btn {
-      background-color: #c2bba8;
-      color: #233237;
-      border-radius: 0.5em;
-      margin-bottom: 0.5em;
-      -webkit-transition-duration: 0.4s;
-      /* Safari */
-      transition-duration: 0.4s; }
-    div.footer-container #footer-social .btn:hover {
-      background-color: #F4F4F4; }
     div.footer-container #footer-social a {
       color: #c2bba8;
       text-decoration: none; }
@@ -176,5 +892,17 @@ div.footer-container {
   font-family: 'Abolon';
   src: url("../fonts/Abolon.otf") format("opentype");
   src: url("../fonts/Abolon.ttf") format("truetype"); }
+.btn {
+  background-color: #c2bba8;
+  color: #233237;
+  font-family: "Abolon", serif;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s; }
+
+.btn:hover {
+  background-color: #F4F4F4; }
 
 /*# sourceMappingURL=application.css.map */

@@ -12,7 +12,9 @@ body {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
 
+//===================================
 // LOGOS
+//===================================
 //for header
 #nav-brand {
     margin-top: -1.5em;
@@ -39,7 +41,24 @@ body {
     }
 }
 
+//for Homepage
+.brand-holder {
+    margin-bottom: -1.5em;
+    .welcome {
+        margin-bottom: 0.75em;
+        font-size: 4em;
+        // font-family: @oswaldBold, @abolon, sans-serif;
+    }
+    @media screen and (max-width: 993px) {
+        .welcome {
+            font-size: 3.5em;
+        }
+    }
+}
+
+//===================================
 // Symbols
+//===================================
 //copyright
 #copyright {
     text-align: center;

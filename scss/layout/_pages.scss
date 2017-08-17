@@ -1,0 +1,993 @@
+//========================================================
+//--------------------HOMEPAGE STYLING--------------------
+//========================================================
+.splash {
+    margin-top: 8em;
+    .brand-holder {
+        margin-bottom: -1.5em;
+        .welcome {
+            margin-bottom: 0.75em;
+            font-size: 4em;
+            font-family: $oswaldBold, $abolon, sans-serif;
+        }
+        @media screen and (max-width: 993px) {
+            .welcome {
+                font-size: 3.5em;
+            }
+        }
+    }
+    .constrain-contain {
+        margin-top: -2em;
+        .slide-container {
+            display: inline;
+            font-family: $abolon;
+            .slide {
+                width: 350px;
+                height: 450px;
+                margin: 0;
+                margin-right: 0;
+                display: inline-block;
+                vertical-align: top;
+                border: 1px solid lightgrey;
+                color: $baseSand;
+                text-align: justify;
+                cursor: pointer;
+                cursor: hand;
+            }
+            @media (min-width: 540px) and (max-width: 1200px) {
+                .slide {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+            .transform {
+                overflow: hidden;
+            }
+            .transform img {
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            .transform:hover img {
+                transform: translateX(-550px);
+            }
+            .background,
+            .multi {
+                background-image: url(../images/headshot.png);
+                background-repeat: no-repeat;
+                background-color: $baseGray;
+                background-size: cover;
+                background-position: top center;
+                -webkit-transition: all 1.5s ease-in-out;
+                -moz-transition: all 1.5s ease-in-out;
+                -o-transition: all 1.5s ease-in-out;
+                -ms-transition: all 1.5s ease-in-out;
+                transition: all 1.5s ease-in-out;
+            }
+        }
+        @media (min-width: 540px) and (max-width: 1200px) {
+            .slide-container {
+                margin-left: -3em;
+            }
+        }
+        .slide-container2 {
+            display: inline;
+            font-family: $abolon;
+            .slide2 {
+                width: 350px;
+                height: 450px;
+                margin: 0px;
+                margin-right: 0;
+                display: inline-block;
+                vertical-align: top;
+                border: 1px solid lightgrey;
+                color: white;
+                text-align: justify;
+                cursor: pointer;
+                cursor: hand;
+            }
+            @media (min-width: 540px) and (max-width: 1200px) {
+                .slide2 {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+            .transform2 {
+                overflow: hidden;
+            }
+            .transform2 img {
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            .transform2:hover img {
+                transform: translateX(350px);
+            }
+            .background,
+            .multi2 {
+                background-image: url(../images/jess.jpg);
+                background-repeat: no-repeat;
+                background-color: $baseGray;
+                background-size: cover;
+                background-position: top center;
+                -webkit-transition: all 1.5s ease-in-out;
+                -moz-transition: all 1.5s ease-in-out;
+                -o-transition: all 1.5s ease-in-out;
+                -ms-transition: all 1.5s ease-in-out;
+                transition: all 1.5s ease-in-out;
+            }
+        }
+        @media (min-width: 540px) and (max-width: 1200px) {
+            .slide-container2 {
+                margin-left: 2em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .splash {
+        margin-top: 6em;
+        width: 100%;
+    }
+}
+
+.container {
+    margin-bottom: 3em;
+    text-align: center;
+    h2 {
+        font-family: $oswaldBold;
+    }
+    .mini-container {
+        margin-bottom: 2.8em;
+        .mini-image1 {
+            height: 10em;
+            width: 100%;
+            background-image: url(../images/computer-study.jpg);
+            background-size: cover;
+            background-color: $baseGray;
+        }
+        .mini-image2 {
+            height: 10em;
+            width: 100%;
+            background-image: url(../images/responsive-design.jpg);
+            background-size: cover;
+            background-color: $baseGray;
+        }
+        .mini-image3 {
+            height: 10em;
+            width: 100%;
+            background-image: url(../images/colors-wheel.jpg);
+            background-size: cover;
+            background-color: $baseGray;
+        }
+        p {
+            font-family: $oswaldLight;
+            text-align: left;
+            font-size: 1.15em;
+        }
+        @media (max-width: 700px) {
+            p {
+                font-size: 1.65em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//========================================================
+//--------------------ABOUT STYLING--------------------
+//========================================================
+@media only screen and (min-device-width: 768px) {
+    div#about-main-container {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        h2 {
+            font-family: $oswaldBold, sans-serif;
+            margin-top: 0;
+        }
+        h3 {
+            font-family: $abolon, sans-serif;
+        }
+        .about-para {
+            font-family: $oswaldLight, sans-serif;
+            font-size: 1.25em;
+            display: inline-block;
+        }
+        .contact-info {
+            a {
+                text-decoration: none;
+                color: black;
+                a:hover {
+                    color: $baseGray;
+                }
+            }
+        }
+        .email-address {
+            margin-right: 1em;
+            font-family: $oswaldBold;
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+        .portfolio-link {
+            margin-right: 1em;
+            font-family: $oswaldBold;
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+        .resume-button {
+            margin-right: 1.3em;
+            font-family: $oswaldBold;
+            font-size: 1.5em;
+            vertical-align: middle;
+            border: none;
+            background: none;
+        }
+        .linkedin-logo {
+            img {
+                height: 1.7em;
+            }
+        }
+        .github-logo {
+            img {
+                height: 2.2em;
+                margin-right: 2em;
+            }
+        }
+        .modal-header {
+            .close {
+                color: black;
+                opacity: 1;
+            }
+        }
+        .modal-content {
+            display: inline-block;
+            text-align: center;
+        }
+        #modal-label {
+            font-size: 30px;
+            font-family: $oswaldBold, sans-serif;
+        }
+        .modal-body {
+            h3 {
+                float: left;
+                font-family: $oswaldBold, sans-serif;
+            }
+            p {
+                text-align: left;
+                clear: both;
+                font-family: $oswaldLight, sans-serif;
+                font-size: 20px;
+            }
+            h5 {
+                text-align: left;
+                float: left;
+                font-family: $oswaldBold, sans-serif;
+                clear: both;
+            }
+            li {
+                float: left;
+                text-align: left;
+                clear: both;
+                font-family: $oswaldLight, sans-serif;
+                font-size: 20px;
+            }
+        }
+        .modal-footer {
+            clear: both;
+        }
+        .spacer {
+            margin-bottom: 1em;
+        }
+        //-----CHRIS STYLING-----
+        #chris-container {
+            width: 75%;
+            margin: auto;
+            .chris-titles {
+                width: 100%;
+                display: inline-block;
+                h3 {
+                    margin-top: 0;
+                }
+            }
+            #chris-image {
+                img {
+                    height: 300px;
+                }
+            }
+            #chris-info {
+                margin-left: 2em;
+            }
+            @media(max-width:950px) {
+                #chris-info {
+                    margin-left: 4em;
+                }
+            }
+        }
+        //-----JESS STYLING-----
+        #jess-container {
+            width: 75%;
+            margin: auto;
+            padding-top: 3em;
+            .jess-titles {
+                width: 100%;
+                display: inline-block;
+                h2 {
+                    float: right;
+                }
+                h3 {
+                    float: right;
+                    margin-top: 0;
+                }
+            }
+            #jess-image {
+                display: inline-block;
+                img {
+                    height: 20em;
+                    width: 9em;
+                }
+            }
+            #jess-info {
+                float: left;
+            }
+            @media(max-width: 768px) {
+                #jess-image {
+                    text-align: center;
+                }
+            }
+            .about-para {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// MOBILE ABOUT US BEGINS
+@media only screen and (max-width: 767px) {
+    div#about-main-container {
+        width: 100%;
+        text-align: center;
+        .resume-button {
+            margin-left: 0;
+            font-family: $oswaldBold;
+            font-size: 1.4em;
+            vertical-align: middle;
+            border: none;
+            background: none;
+        }
+        .linkedin-logo {
+            img {
+                height: 1.5em;
+                margin-right: 0;
+            }
+        }
+        .github-logo {
+            img {
+                height: 2em;
+                margin-right: .5em;
+            }
+        }
+        .email-address {
+            margin-right: .5em;
+            font-family: $oswaldBold;
+            font-size: 1.4em;
+            vertical-align: middle;
+        }
+        .contact-info {
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: black;
+                a:hover {
+                    color: $baseGray;
+                }
+            }
+        }
+        .about-para {
+            font-family: $oswaldLight, sans-serif;
+            font-size: 21px;
+        }
+        .modal-header {
+            .close {
+                color: black;
+                opacity: 1;
+            }
+        }
+        .modal-content {
+            display: inline-block;
+            text-align: center;
+        }
+        #modal-label {
+            font-size: 30px;
+            font-family: $oswaldBold, sans-serif;
+        }
+        .modal-body {
+            h3 {
+                float: left;
+                font-family: $oswaldBold, sans-serif;
+            }
+            p {
+                text-align: left;
+                clear: both;
+                font-family: $oswaldLight, sans-serif;
+                font-size: 20px;
+            }
+            h5 {
+                text-align: left;
+                float: left;
+                font-family: $oswaldBold, sans-serif;
+                font-size: 20px;
+                clear: both;
+            }
+            li {
+                float: left;
+                text-align: left;
+                clear: both;
+                font-family: $oswaldLight, sans-serif;
+                font-size: 20px;
+            }
+        }
+        .modal-footer {
+            clear: both;
+        }
+        .spacer {
+            margin-bottom: 1em;
+        }
+        // MOBILE CHRIS
+        .mobile-portrait {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6em;
+            height: 15em;
+            width: 10em;
+            background-color: $baseSand;
+            background-image: url('../images/chrishead-square.jpg');
+            background-size: cover;
+        }
+        #chris-container {
+            width: 90%;
+            padding-top: 1em;
+            margin: auto;
+            .chris-titles {
+                h2 {
+                    float: none;
+                    margin-bottom: .5em;
+                    font-family: $oswaldBold, sans-serif;
+                }
+                h5 {
+                    font-family: $abolon, sans-serif;
+                }
+            }
+            #chris-info {
+                margin: 0;
+                float: none;
+            }
+        }
+        // MOBILE JESS
+        .mobile-portrait-jess {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+            height: 15em;
+            width: 10em;
+            background-color: $baseSand;
+            background-image: url('../images/jesshead-square.jpg');
+            background-size: cover;
+        }
+        #jess-container {
+            width: 90%;
+            margin: auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            #jess-info {
+                margin: 0;
+                float: none;
+            }
+        }
+        #jess-container {
+            .jess-titles {
+                h2 {
+                    float: none;
+                    margin-bottom: .5em;
+                    font-family: $oswaldBold, sans-serif;
+                }
+                h5 {
+                    font-family: $abolon, sans-serif;
+                }
+            }
+        }
+    }
+}
+
+//========================================================
+//--------------------SERVICES STYLING--------------------
+//========================================================
+@media only screen and (min-device-width: 768px) {
+    div.services-main-container {
+        padding-top: 5em;
+        padding-bottom: 4em;
+        h1 {
+            font-family: $abolon, sans-serif;
+            margin-top: 0;
+        }
+        .services-para {
+            font-family: $oswaldLight, sans-serif;
+            font-size: 1.25em;
+            display: inline-block;
+        }
+        .title {
+            width: 100%;
+            display: inline-block;
+        }
+        // WEB DESIGN STYLING
+        #webdesign-container {
+            width: 80%;
+            margin: auto;
+            #webdesign-image {
+                background-image: url(../images/web-design-services.jpg);
+                background-size: cover;
+                height: 11em;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            #webdesign-info {
+                display: inline-block;
+            }
+        }
+        // SEO STYLING
+        #seo-container {
+            background-color: #e7e9ec;
+            padding-top: 2em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+            padding-left: 10%;
+            padding-right: 10%;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            h1 {
+                float: right;
+            }
+            #seo-image {
+                background-image: url(../images/seo-services.jpg);
+                background-size: cover;
+                height: 11em;
+                width: 100%;
+            }
+        }
+        // GRAPHIC DESIGN STYLING
+        #graphicdesign-container {
+            width: 80%;
+            margin: auto;
+            #graphicdesign-image {
+                background-image: url(../images/graphicdesign-services.jpg);
+                background-size: cover;
+                height: 11em;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+// MOBILE SERVICES STYLING
+@media only screen and (max-width: 768px) {
+    div.services-main-container {
+        text-align: center;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        .title {
+            h1 {
+                font-family: $abolon, sans-serif;
+            }
+        }
+        .services-para {
+            font-size: 21px;
+            font-family: $oswaldLight, sans-serif;
+            width: 97%;
+        }
+        #webdesign-container {
+            width: 100%;
+            #webdesign-image-mobile {
+                background-image: url(../images/web-design-services-mobile.jpg);
+                background-size: cover;
+                height: 6em;
+                width: 100%;
+                top: 0;
+                left: 0;
+                margin-bottom: .5em;
+            }
+            #webdesign-info {
+                margin: 0 .75em 0 .75em;
+            }
+        }
+        #seo-container {
+            width: 100%;
+            background-color: #e7e9ec;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-top: 2.5em;
+            padding-bottom: 2.5em;
+            h1 {
+                float: none;
+            }
+            #seo-info {
+                margin: 0 .75em 0 .75em;
+                float: none;
+            }
+            #seo-image-mobile {
+                background-image: url(../images/seo-services-mobile.jpg);
+                background-size: cover;
+                height: 6em;
+                width: 100%;
+                top: 0;
+                left: 0;
+                margin-bottom: 0.5em;
+            }
+        }
+        #graphicdesign-container {
+            width: 100%;
+            #graphicdesign-image-mobile {
+                background-image: url(../images/graphicdesign-services-mobile.jpg);
+                background-size: cover;
+                height: 6em;
+                width: 100%;
+                top: 0;
+                left: 0;
+                margin-bottom: .5em;
+            }
+            #graphicdesign-info {
+                margin: 0 .75em 2em .75em;
+            }
+        }
+    }
+}
+
+//========================================================
+//--------------------PORTFOLIO STYLING--------------------
+//========================================================
+@media only screen and (min-device-width: 768px) {
+    div#main-portfolio-container {
+        padding-top: 3em;
+        padding-bottom: 4em;
+        h1 {
+            font-family: $abolon, sans-serif;
+            margin-top: 0;
+        }
+        .port-container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .thumbnail {
+            background-size: cover;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 3em;
+        }
+        .close {
+            color: black;
+            opacity: 1;
+        }
+        .modal-dialog img {
+            width: 100%;
+        }
+        .modal-content {
+            display: inline-block;
+            text-align: center;
+        }
+        #modal-label {
+            font-size: 30px;
+            font-family: $oswaldBold, sans-serif;
+        }
+        #mary-modal {
+            margin-left: 11.5%;
+        }
+        #web-thumb-one {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop1.jpg);
+        }
+        #web-thumb-two {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop2.jpg);
+        }
+        #web-thumb-three {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop3.jpg);
+        }
+        #web-thumb-four {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop4.jpg);
+        }
+        #web-thumb-five {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile1.jpg);
+        }
+        #web-thumb-six {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile2.jpg);
+        }
+        #web-thumb-seven {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile3.jpg);
+        }
+        #web-thumb-eight {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile4.jpg);
+        }
+        #web-thumb-nine {
+            background-image: url(../images/portfolio-web/pet-home-desk.png);
+        }
+        #web-thumb-ten {
+            background-image: url(../images/portfolio-web/pet-search-desk.png);
+        }
+        #web-thumb-eleven {
+            background-image: url(../images/portfolio-web/pet-resources-desk.png);
+        }
+        #web-thumb-twelve {
+            background-image: url(../images/portfolio-web/pet-resources-modal.png);
+        }
+        #web-thumb-thirteen {
+            background-image: url(../images/portfolio-web/pet-resources-mobile.png);
+        }
+        #web-thumb-fourteen {
+            background-image: url(../images/portfolio-web/pet-vetfinder-desk.png);
+        }
+        #web-thumb-fifteen {
+            background-image: url(../images/portfolio-web/pet-namegen-desk.png);
+        }
+        #web-thumb-sixteen {
+            background-image: url(../images/portfolio-web/pet-name-gen-mobile.png);
+        }
+        #graphic-thumb-one {
+            background-image: url(../images/portfolio-graphic/wikitherapy.jpg);
+        }
+        #graphic-thumb-two {
+            background-image: url(../images/portfolio-graphic/MaryPhotoshop.jpg);
+        }
+        #graphic-thumb-three {
+            background-image: url(../images/portfolio-graphic/fightclubyaya1.jpg);
+        }
+        #graphic-thumb-four {
+            background-image: url(../images/portfolio-graphic/GrouchoYang.png);
+        }
+        #graphic-thumb-five {
+            background-image: url(../images/portfolio-graphic/Mattsincity.jpg);
+        }
+        #graphic-thumb-six {
+            background-image: url(../images/portfolio-graphic/Shirapatch.jpg);
+        }
+        #graphic-thumb-seven {
+            background-image: url(../images/portfolio-graphic/CABFbrochure.jpg);
+        }
+        #graphic-thumb-eight {
+            background-image: url(../images/portfolio-graphic/aristotle&juliuscaesar.jpg);
+        }
+    }
+}
+
+// MOBILE PORTFOLIO STYLING
+@media only screen and (max-width: 767px) {
+    #main-portfolio-container {
+        margin-top: 6em;
+        padding-bottom: 2em;
+        #modal-label {
+            font-size: 1.2em;
+            font-family: $oswaldBold, sans-serif;
+        }
+        .close {
+            color: black;
+            opacity: 1;
+        }
+        img {
+            width: 97%;
+        }
+        .modal-content {
+            display: inline-block;
+            text-align: center;
+        }
+        h1 {
+            font-family: $abolon, sans-serif;
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+        }
+        .thumbnail {
+            background-size: cover;
+            top: 0;
+            left: 0;
+            height: 16em;
+            width: 90%;
+            margin-bottom: 2em;
+            margin-left: 1.2em;
+        }
+        #web-thumb-one {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop1.jpg);
+        }
+        #web-thumb-two {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop2.jpg);
+        }
+        #web-thumb-three {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop3.jpg);
+        }
+        #web-thumb-four {
+            background-image: url(../images/portfolio-web/mouthfeel-desktop4.jpg);
+        }
+        #web-thumb-five {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile1.jpg);
+        }
+        #web-thumb-six {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile2.jpg);
+        }
+        #web-thumb-seven {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile3.jpg);
+        }
+        #web-thumb-eight {
+            background-image: url(../images/portfolio-web/mouthfeel-mobile4.jpg);
+        }
+        #web-thumb-nine {
+            background-image: url(../images/portfolio-web/pet-home-desk.png);
+        }
+        #web-thumb-ten {
+            background-image: url(../images/portfolio-web/pet-search-desk.png);
+        }
+        #web-thumb-eleven {
+            background-image: url(../images/portfolio-web/pet-resources-desk.png);
+        }
+        #web-thumb-twelve {
+            background-image: url(../images/portfolio-web/pet-resources-modal.png);
+        }
+        #web-thumb-thirteen {
+            background-image: url(../images/portfolio-web/pet-resources-mobile.png);
+        }
+        #web-thumb-fourteen {
+            background-image: url(../images/portfolio-web/pet-vetfinder-desk.png);
+        }
+        #web-thumb-fifteen {
+            background-image: url(../images/portfolio-web/pet-namegen-desk.png);
+        }
+        #web-thumb-sixteen {
+            background-image: url(../images/portfolio-web/pet-name-gen-mobile.png);
+        }
+        #graphic-thumb-one {
+            background-image: url(../images/portfolio-graphic/wikitherapy.jpg);
+        }
+        #graphic-thumb-two {
+            background-image: url(../images/portfolio-graphic/MaryPhotoshop.jpg);
+        }
+        #graphic-thumb-three {
+            background-image: url(../images/portfolio-graphic/fightclubyaya1.jpg);
+        }
+        #graphic-thumb-four {
+            background-image: url(../images/portfolio-graphic/GrouchoYang.png);
+        }
+        #graphic-thumb-five {
+            background-image: url(../images/portfolio-graphic/Mattsincity.jpg);
+        }
+        #graphic-thumb-six {
+            background-image: url(../images/portfolio-graphic/Shirapatch.jpg);
+        }
+        #graphic-thumb-seven {
+            background-image: url(../images/portfolio-graphic/CABFbrochure.jpg);
+        }
+        #graphic-thumb-eight {
+            background-image: url(../images/portfolio-graphic/windowthinking.jpg);
+        }
+    }
+}
+
+//========================================================
+//--------------------CONTACT STYLING--------------------
+//========================================================
+@media only screen and (max-width: 767px) {
+    .spacer {
+        margin-bottom: 5em;
+    }
+}
+
+//========================================================
+//--------------------TOOLS STYLING--------------------
+//========================================================
+div#tools-main-container {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 4em;
+    margin-bottom: 4em;
+    display: inline-block;
+    #tools-title h1 {
+        font-size: 40px;
+        font-family: $abolon, sans-serif;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: -15px;
+    }
+    h6 {
+        font-size: 13px;
+        font-family: $abolon, sans-serif;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .noSelect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .tool-list {
+        li {
+            font-family: $oswaldLight, sans-serif;
+            font-size: 28px;
+            list-style: none;
+            width: 41%;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        li.left {
+            float: left;
+        }
+        li.right {
+            float: right;
+        }
+    }
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    z-index: 1;
+    img {
+        margin-top: 10%;
+    }
+    p {
+        color: white;
+    }
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-inside {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    div#tools-main-container {
+        margin-top: -2.5em;
+        padding-top: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div#tools-main-container {
+        text-align: center;
+        margin-top: 3em;
+        padding-bottom: 2em;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        ul.tool-list {
+            padding-left: 0;
+            .left,
+            .right {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+}
